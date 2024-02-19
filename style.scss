@@ -53,10 +53,6 @@ $text-color: white;
     padding-left: 30px;
     position: relative;
 
-    .weather-text,
-    .temprature,
-    .day-date,
-    .city-name,
     .weather-image,
     .rain-cloud-drops {
         display: none;
@@ -220,11 +216,6 @@ $text-color: white;
 
 //////////////////////////////////WEATHER SUNNY/////////////////////////////
 .weather-sunny {
-
-    .sunny-text,
-    .sunny-temp,
-    .sunny-day,
-    .fransisco,
     .sunny-image {
         display: block;
     }
@@ -269,11 +260,6 @@ $text-color: white;
 
 ///////////////////////////////WEATHER NIGHT///////////////////////////////
 .weather-night {
-
-    .night-text,
-    .night-temp,
-    .night-day,
-    .paris,
     .night-image,
     .rain-cloud-drops {
         display: block;
@@ -334,10 +320,6 @@ $text-color: white;
 
 ///////////////////////////////////////WEATHER RAINY//////////////////////////////
 .weather-rainy {
-    .rainy-text,
-    .rainy-temp,
-    .rainy-day,
-    .london,
     .rainy-image,
     .rain-cloud-drops {
         display: block;

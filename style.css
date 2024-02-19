@@ -52,10 +52,6 @@
   position: relative;
   overflow: hidden;
 }
-.weather-details .weather-text,
-.weather-details .temprature,
-.weather-details .day-date,
-.weather-details .city-name,
 .weather-details .weather-image,
 .weather-details .rain-cloud-drops {
   display: none;
@@ -207,10 +203,6 @@
 .weather-sunny {
   background: linear-gradient(to right, rgb(28, 147, 253), rgb(62, 166, 255), rgb(94, 186, 255));
 }
-.weather-sunny .sunny-text,
-.weather-sunny .sunny-temp,
-.weather-sunny .sunny-day,
-.weather-sunny .fransisco,
 .weather-sunny .sunny-image {
   display: block;
 }
@@ -248,10 +240,6 @@
 .weather-night {
   background: linear-gradient(to right, rgb(45, 98, 247), rgb(95, 109, 236), rgb(175, 127, 219));
 }
-.weather-night .night-text,
-.weather-night .night-temp,
-.weather-night .night-day,
-.weather-night .paris,
 .weather-night .night-image,
 .weather-night .rain-cloud-drops {
   display: block;
@@ -302,10 +290,6 @@
 .weather-rainy {
   background: linear-gradient(to right, rgb(0, 191, 166), rgb(47, 211, 164), rgb(97, 236, 163));
 }
-.weather-rainy .rainy-text,
-.weather-rainy .rainy-temp,
-.weather-rainy .rainy-day,
-.weather-rainy .london,
 .weather-rainy .rainy-image,
 .weather-rainy .rain-cloud-drops {
   display: block;
