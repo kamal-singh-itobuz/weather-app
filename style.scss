@@ -1,0 +1,366 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+$text-color: white;
+
+.input-field {
+    margin-top: 10rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+
+    input {
+        width: 16rem;
+        outline: none;
+        padding: 0.5rem 1rem;
+        font-size: 1.1rem;
+    }
+    button {
+        padding: 0.3rem 1rem;
+        font-size: 1.1rem;
+        cursor: pointer;
+    }
+}
+
+.main {
+    // height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.location-icon {
+    height: 22px;
+    width: 22px;
+}
+
+.separator {
+    height: 80px;
+    width: 2px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100%;
+}
+
+.weather-details {
+    height: 180px;
+    width: 800px;
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-left: 30px;
+    position: relative;
+
+    .weather-text,
+    .temprature,
+    .day-date,
+    .city-name,
+    .weather-image,
+    .rain-cloud-drops {
+        display: none;
+    }
+
+    .weather-text {
+        color: $text-color;
+        font-size: 20px;
+    }
+
+    .weather-content {
+        .temprature {
+            color: $text-color;
+            font-size: 80px;
+        }
+
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .day-location {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 15px;
+
+            .day-date {
+                color: $text-color;
+                font-size: 16px;
+            }
+
+            .location {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+
+                .city-name {
+                    color: $text-color;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    overflow: hidden;
+
+    .weather-image {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+
+        .weather-inner {
+            position: relative;
+        }
+    }
+
+    .rain-cloud-drops {
+        margin-left: 400px;
+        position: absolute;
+        transform: rotate(35deg);
+        right: 275px;
+        >div{
+            position: relative;
+            >span{
+                display: inline-block;
+                height: 20px;
+                width: 6px;
+                background: rgba(255, 255, 255, 0.5);
+                border-radius: 80% 80% 30% 30%;
+                position: absolute;
+            }
+            >span:nth-child(1){
+                left: 188px;
+                bottom: 162px;
+            }
+            >span:nth-child(2){
+                left: 188px;
+                bottom: 113px;
+                height: 26px;
+            }
+            >span:nth-child(3){
+                left: 167px;
+                bottom: 150px;
+            }
+            >span:nth-child(4){
+                left: 167px;
+                bottom: 113px;
+            }
+            >span:nth-child(5){
+                left: 167px;
+                bottom: 82px;
+                height: 16px;
+            }
+            >span:nth-child(6){
+                left: 100px;
+                bottom: 80px;
+            }
+            >span:nth-child(7){
+                left: 100px;
+                bottom: 40px;
+            }
+            >span:nth-child(8){
+                left: 78px;
+                bottom: 80px;
+            }
+            >span:nth-child(9){
+                left: 78px;
+                bottom: 50px;
+            }
+            >span:nth-child(10){
+                left: 78px;
+                bottom: 20px;
+            }
+            >span:nth-child(11){
+                left: 40px;
+                bottom: 54px;
+            }
+            >span:nth-child(12){
+                left: 40px;
+                bottom: 12px;
+                height: 16px;
+            }
+            >span:nth-child(13){
+                left: 0px;
+                bottom: 120px;
+                height: 24px;
+            }
+            >span:nth-child(14){
+                left: 0px;
+                bottom: 60px;
+                height: 24px;
+            }
+            >span:nth-child(15){
+                left: 0px;
+                bottom: 0px;
+                height: 24px;
+            }
+            >span:nth-child(16){
+                left: -30px;
+                bottom: 20px;
+                height: 24px;
+            }
+            >span:nth-child(17){
+                left: -30px;
+                bottom: -30px;
+                height: 24px;
+            }
+            >span:nth-child(18){
+                left: -60px;
+                bottom: 60px;
+                height: 24px;
+            }
+            >span:nth-child(19){
+                left: -60px;
+                bottom: 5px;
+                height: 24px;
+            }
+        }
+    }
+}
+
+//////////////////////////////////WEATHER SUNNY/////////////////////////////
+.weather-sunny {
+
+    .sunny-text,
+    .sunny-temp,
+    .sunny-day,
+    .fransisco,
+    .sunny-image {
+        display: block;
+    }
+
+    background: linear-gradient(to right, rgb(28, 147, 253), rgb(62, 166, 255), rgb(94, 186, 255));
+
+    .sunny-inner {
+        .sun {
+            position: absolute;
+            height: 180px;
+            width: 180px;
+            background: linear-gradient(to bottom, rgb(254, 255, 178), rgb(254, 237, 139), rgb(252, 204, 67));
+            border-radius: 50%;
+            right: -38px;
+            top: -39px;
+            z-index: 3;
+        }
+
+        .sun-shine-light {
+            position: absolute;
+            height: 250px;
+            width: 250px;
+            background: rgba(162, 218, 254, 0.8);
+            border-radius: 50%;
+            right: -60px;
+            top: -65px;
+            z-index: 2;
+        }
+
+        .sun-shine-lighter {
+            position: absolute;
+            height: 320px;
+            width: 320px;
+            background: rgba(127, 201, 255, 0.7);
+            border-radius: 50%;
+            right: -78px;
+            top: -91px;
+            z-index: 1;
+        }
+    }
+}
+
+///////////////////////////////WEATHER NIGHT///////////////////////////////
+.weather-night {
+
+    .night-text,
+    .night-temp,
+    .night-day,
+    .paris,
+    .night-image,
+    .rain-cloud-drops {
+        display: block;
+    }
+
+    background: linear-gradient(to right, rgb(45, 98, 247), rgb(95, 109, 236), rgb(175, 127, 219));
+
+    .night-inner {
+        .cloud-image {
+            height: 200px;
+            width: 200px;
+        }
+
+        .moon {
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            top: 10px;
+            right: -10px;
+            transform: rotate(-30deg);
+        }
+    }
+    .rain-cloud-drops {
+        >div{
+            >span{
+                height: 8px !important;
+                width: 8px;
+                border-radius: 50%;
+            }
+            >span:nth-child(-n+10),
+            >span:nth-child(16),
+            >span:nth-child(17){
+                visibility: hidden;
+            }
+            >span:nth-child(11){
+                bottom: 165px;
+            }
+            >span:nth-child(12){
+                bottom: 0px;
+            }
+            >span:nth-child(13),
+            >span:nth-child(14),
+            >span:nth-child(15){
+                left: -10px;
+            }
+            >span:nth-child(18) {
+                height: 15px !important;
+                width: 15px;
+            }
+            >span:nth-child(13),
+            >span:nth-child(15) {
+                height: 11px !important;
+                width: 11px;
+            }
+        }
+    }
+}
+
+///////////////////////////////////////WEATHER RAINY//////////////////////////////
+.weather-rainy {
+    .rainy-text,
+    .rainy-temp,
+    .rainy-day,
+    .london,
+    .rainy-image,
+    .rain-cloud-drops {
+        display: block;
+    }
+
+    background: linear-gradient(to right, rgb(0, 191, 166), rgb(47, 211, 164), rgb(97, 236, 163));
+
+    .rainy-image {
+        top: -65px;
+    }
+
+    .rainy-inner {
+        .cloud-image {
+            height: 200px;
+            width: 200px;
+        }
+
+        .thunder {
+            position: absolute;
+            height: 80px;
+            width: 80px;
+            top: 152px;
+            right: 60px;
+        }
+    }
+}

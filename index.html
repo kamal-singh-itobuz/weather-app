@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="input-field">
+        <input class="input" type="text" placeholder="Enter Location">
+        <button class="search">submit</button>
+    </div>
+    <div class="main">
+        <div class="weather-details weather-night">
+            <div>
+                <p class="sunny-text weather-text">Sunny</p>
+                <p class="night-text weather-text">Cloud Night</p>
+                <p class="rainy-text weather-text">Rain</p>
+            </div>
+            <div class="weather-content">
+                <div>
+                    <p class="sunny-temp temprature">25&deg; </p>
+                    <p class="night-temp temprature">22&deg; </p>
+                    <p class="rainy-temp temprature">15&deg; </p>
+                </div>
+                <div class="separator"></div>
+                <div class="day-location">
+                    <div class="mon-tues-sun">
+                        <p class="sunny-day day-date">Monday, 21 September</p>
+                        <p class="night-day day-date">Tuesday, 22 September</p>
+                        <p class="rainy-day day-date">Sunday, 23 September</p>
+                    </div>
+                    <div class="location">
+                        <img class="location-icon" src="./images/location.svg" alt="location">
+                        <div>
+                            <p class="fransisco city-name">San Fransisco</p>
+                            <p class="paris city-name">Paris</p>
+                            <p class="london city-name">London</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sunny-image weather-image"> <!-- pos abs w.r.t weather-details -->
+                <div class="sunny-inner weather-inner"> <!-- pos relative -->
+                    <div class="sun"></div> <!-- pos abs w.r.t weather-inner -->
+                    <div class="sun-shine-light"></div> <!-- pos abs w.r.t weather-inner -->
+                    <div class="sun-shine-lighter"></div> <!-- pos abs w.r.t weather-inner -->
+                </div>
+            </div>
+            <div class="night-image weather-image">
+                <div class="night-inner weather-inner">
+                    <img class="cloud-image" src="./images/cloud.svg" alt="cloud-night">
+                    <img class="moon" src="./images/moon.svg" alt="moon image">
+                </div>
+            </div>
+            <div class="rainy-image weather-image">
+                <div class="rainy-inner weather-inner">
+                    <img class="cloud-image" src="./images/cloud.svg" alt="Sunny">
+                    <img class="thunder" src="./images/thunder.svg" alt="thunder">
+                </div>
+            </div>
+
+            <div class="rain-cloud-drops">
+                <div>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
