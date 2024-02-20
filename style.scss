@@ -1,13 +1,16 @@
+$text-color: white;
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-$text-color: white;
+
 body {
     background-color: #023047;
 }
+
 .input-field {
     margin-top: 10rem;
     margin-bottom: 1rem;
@@ -21,6 +24,7 @@ body {
         padding: 0.5rem 1rem;
         font-size: 1.1rem;
     }
+
     button {
         padding: 0.3rem 1rem;
         font-size: 1.1rem;
@@ -115,9 +119,11 @@ body {
         position: absolute;
         transform: rotate(35deg);
         right: 275px;
-        >div{
+
+        >div {
             position: relative;
-            >span{
+
+            >span {
                 display: inline-block;
                 height: 20px;
                 width: 6px;
@@ -125,88 +131,107 @@ body {
                 border-radius: 80% 80% 30% 30%;
                 position: absolute;
             }
-            >span:nth-child(1){
+
+            >span:nth-child(1) {
                 left: 188px;
                 bottom: 162px;
             }
-            >span:nth-child(2){
+
+            >span:nth-child(2) {
                 left: 188px;
                 bottom: 113px;
                 height: 26px;
             }
-            >span:nth-child(3){
+
+            >span:nth-child(3) {
                 left: 167px;
                 bottom: 150px;
             }
-            >span:nth-child(4){
+
+            >span:nth-child(4) {
                 left: 167px;
                 bottom: 113px;
             }
-            >span:nth-child(5){
+
+            >span:nth-child(5) {
                 left: 167px;
                 bottom: 82px;
                 height: 16px;
             }
-            >span:nth-child(6){
+
+            >span:nth-child(6) {
                 left: 100px;
                 bottom: 80px;
             }
-            >span:nth-child(7){
+
+            >span:nth-child(7) {
                 left: 100px;
                 bottom: 40px;
             }
-            >span:nth-child(8){
+
+            >span:nth-child(8) {
                 left: 78px;
                 bottom: 80px;
             }
-            >span:nth-child(9){
+
+            >span:nth-child(9) {
                 left: 78px;
                 bottom: 50px;
             }
-            >span:nth-child(10){
+
+            >span:nth-child(10) {
                 left: 78px;
                 bottom: 20px;
             }
-            >span:nth-child(11){
+
+            >span:nth-child(11) {
                 left: 40px;
                 bottom: 54px;
             }
-            >span:nth-child(12){
+
+            >span:nth-child(12) {
                 left: 40px;
                 bottom: 12px;
                 height: 16px;
             }
-            >span:nth-child(13){
+
+            >span:nth-child(13) {
                 left: 0px;
                 bottom: 120px;
                 height: 24px;
             }
-            >span:nth-child(14){
+
+            >span:nth-child(14) {
                 left: 0px;
                 bottom: 60px;
                 height: 24px;
             }
-            >span:nth-child(15){
+
+            >span:nth-child(15) {
                 left: 0px;
                 bottom: 0px;
                 height: 24px;
             }
-            >span:nth-child(16){
+
+            >span:nth-child(16) {
                 left: -30px;
                 bottom: 20px;
                 height: 24px;
             }
-            >span:nth-child(17){
+
+            >span:nth-child(17) {
                 left: -30px;
                 bottom: -30px;
                 height: 24px;
             }
-            >span:nth-child(18){
+
+            >span:nth-child(18) {
                 left: -60px;
                 bottom: 60px;
                 height: 24px;
             }
-            >span:nth-child(19){
+
+            >span:nth-child(19) {
                 left: -60px;
                 bottom: 5px;
                 height: 24px;
@@ -261,6 +286,7 @@ body {
 
 ///////////////////////////////WEATHER NIGHT///////////////////////////////
 .weather-night {
+
     .night-image,
     .rain-cloud-drops {
         display: block;
@@ -283,33 +309,40 @@ body {
             transform: rotate(-30deg);
         }
     }
+
     .rain-cloud-drops {
-        >div{
-            >span{
+        >div {
+            >span {
                 height: 8px !important;
                 width: 8px;
                 border-radius: 50%;
             }
+
             >span:nth-child(-n+10),
             >span:nth-child(16),
-            >span:nth-child(17){
+            >span:nth-child(17) {
                 visibility: hidden;
             }
-            >span:nth-child(11){
+
+            >span:nth-child(11) {
                 bottom: 165px;
             }
-            >span:nth-child(12){
+
+            >span:nth-child(12) {
                 bottom: 0px;
             }
+
             >span:nth-child(13),
             >span:nth-child(14),
-            >span:nth-child(15){
+            >span:nth-child(15) {
                 left: -10px;
             }
+
             >span:nth-child(18) {
                 height: 15px !important;
                 width: 15px;
             }
+
             >span:nth-child(13),
             >span:nth-child(15) {
                 height: 11px !important;
@@ -321,6 +354,7 @@ body {
 
 ///////////////////////////////////////WEATHER RAINY//////////////////////////////
 .weather-rainy {
+
     .rainy-image,
     .rain-cloud-drops {
         display: block;
@@ -351,10 +385,12 @@ body {
 .not-found {
     display: none;
     justify-content: center;
-    p{
+
+    p {
         font-style: italic;
         font-size: 1.2rem;
         color: white;
     }
+
     margin-top: 3rem;
 }

@@ -15,14 +15,16 @@ body {
   display: flex;
   justify-content: center;
   -moz-column-gap: 2rem;
-       column-gap: 2rem;
+  column-gap: 2rem;
 }
+
 .input-field input {
   width: 16rem;
   outline: none;
   padding: 0.5rem 1rem;
   font-size: 1.1rem;
 }
+
 .input-field button {
   padding: 0.3rem 1rem;
   font-size: 1.1rem;
@@ -56,60 +58,73 @@ body {
   position: relative;
   overflow: hidden;
 }
+
 .weather-details .weather-image,
 .weather-details .rain-cloud-drops {
   display: none;
 }
+
 .weather-details .weather-text {
   color: white;
   font-size: 20px;
 }
+
 .weather-details .weather-content {
   display: flex;
   align-items: center;
   gap: 15px;
 }
+
 .weather-details .weather-content .temprature {
   color: white;
   font-size: 80px;
 }
+
 .weather-details .weather-content .day-location {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 15px;
 }
+
 .weather-details .weather-content .day-location .day-date {
   color: white;
   font-size: 16px;
 }
+
 .weather-details .weather-content .day-location .location {
   display: flex;
   align-items: center;
   gap: 5px;
 }
+
 .weather-details .weather-content .day-location .location .city-name {
   color: white;
   font-size: 16px;
 }
+
 .weather-details .weather-image {
   position: absolute;
   right: 0px;
   top: 0px;
 }
+
 .weather-details .weather-image .weather-inner {
   position: relative;
 }
+
 .weather-details .rain-cloud-drops {
   margin-left: 400px;
   position: absolute;
   transform: rotate(35deg);
   right: 275px;
 }
-.weather-details .rain-cloud-drops > div {
+
+.weather-details .rain-cloud-drops>div {
   position: relative;
 }
-.weather-details .rain-cloud-drops > div > span {
+
+.weather-details .rain-cloud-drops>div>span {
   display: inline-block;
   height: 20px;
   width: 6px;
@@ -117,88 +132,107 @@ body {
   border-radius: 80% 80% 30% 30%;
   position: absolute;
 }
-.weather-details .rain-cloud-drops > div > span:nth-child(1) {
+
+.weather-details .rain-cloud-drops>div>span:nth-child(1) {
   left: 188px;
   bottom: 162px;
 }
-.weather-details .rain-cloud-drops > div > span:nth-child(2) {
+
+.weather-details .rain-cloud-drops>div>span:nth-child(2) {
   left: 188px;
   bottom: 113px;
   height: 26px;
 }
-.weather-details .rain-cloud-drops > div > span:nth-child(3) {
+
+.weather-details .rain-cloud-drops>div>span:nth-child(3) {
   left: 167px;
   bottom: 150px;
 }
-.weather-details .rain-cloud-drops > div > span:nth-child(4) {
+
+.weather-details .rain-cloud-drops>div>span:nth-child(4) {
   left: 167px;
   bottom: 113px;
 }
-.weather-details .rain-cloud-drops > div > span:nth-child(5) {
+
+.weather-details .rain-cloud-drops>div>span:nth-child(5) {
   left: 167px;
   bottom: 82px;
   height: 16px;
 }
-.weather-details .rain-cloud-drops > div > span:nth-child(6) {
+
+.weather-details .rain-cloud-drops>div>span:nth-child(6) {
   left: 100px;
   bottom: 80px;
 }
-.weather-details .rain-cloud-drops > div > span:nth-child(7) {
+
+.weather-details .rain-cloud-drops>div>span:nth-child(7) {
   left: 100px;
   bottom: 40px;
 }
-.weather-details .rain-cloud-drops > div > span:nth-child(8) {
+
+.weather-details .rain-cloud-drops>div>span:nth-child(8) {
   left: 78px;
   bottom: 80px;
 }
-.weather-details .rain-cloud-drops > div > span:nth-child(9) {
+
+.weather-details .rain-cloud-drops>div>span:nth-child(9) {
   left: 78px;
   bottom: 50px;
 }
-.weather-details .rain-cloud-drops > div > span:nth-child(10) {
+
+.weather-details .rain-cloud-drops>div>span:nth-child(10) {
   left: 78px;
   bottom: 20px;
 }
-.weather-details .rain-cloud-drops > div > span:nth-child(11) {
+
+.weather-details .rain-cloud-drops>div>span:nth-child(11) {
   left: 40px;
   bottom: 54px;
 }
-.weather-details .rain-cloud-drops > div > span:nth-child(12) {
+
+.weather-details .rain-cloud-drops>div>span:nth-child(12) {
   left: 40px;
   bottom: 12px;
   height: 16px;
 }
-.weather-details .rain-cloud-drops > div > span:nth-child(13) {
+
+.weather-details .rain-cloud-drops>div>span:nth-child(13) {
   left: 0px;
   bottom: 120px;
   height: 24px;
 }
-.weather-details .rain-cloud-drops > div > span:nth-child(14) {
+
+.weather-details .rain-cloud-drops>div>span:nth-child(14) {
   left: 0px;
   bottom: 60px;
   height: 24px;
 }
-.weather-details .rain-cloud-drops > div > span:nth-child(15) {
+
+.weather-details .rain-cloud-drops>div>span:nth-child(15) {
   left: 0px;
   bottom: 0px;
   height: 24px;
 }
-.weather-details .rain-cloud-drops > div > span:nth-child(16) {
+
+.weather-details .rain-cloud-drops>div>span:nth-child(16) {
   left: -30px;
   bottom: 20px;
   height: 24px;
 }
-.weather-details .rain-cloud-drops > div > span:nth-child(17) {
+
+.weather-details .rain-cloud-drops>div>span:nth-child(17) {
   left: -30px;
   bottom: -30px;
   height: 24px;
 }
-.weather-details .rain-cloud-drops > div > span:nth-child(18) {
+
+.weather-details .rain-cloud-drops>div>span:nth-child(18) {
   left: -60px;
   bottom: 60px;
   height: 24px;
 }
-.weather-details .rain-cloud-drops > div > span:nth-child(19) {
+
+.weather-details .rain-cloud-drops>div>span:nth-child(19) {
   left: -60px;
   bottom: 5px;
   height: 24px;
@@ -207,9 +241,11 @@ body {
 .weather-sunny {
   background: linear-gradient(to right, rgb(28, 147, 253), rgb(62, 166, 255), rgb(94, 186, 255));
 }
+
 .weather-sunny .sunny-image {
   display: block;
 }
+
 .weather-sunny .sunny-inner .sun {
   position: absolute;
   height: 180px;
@@ -220,6 +256,7 @@ body {
   top: -39px;
   z-index: 3;
 }
+
 .weather-sunny .sunny-inner .sun-shine-light {
   position: absolute;
   height: 250px;
@@ -230,6 +267,7 @@ body {
   top: -65px;
   z-index: 2;
 }
+
 .weather-sunny .sunny-inner .sun-shine-lighter {
   position: absolute;
   height: 320px;
@@ -244,14 +282,17 @@ body {
 .weather-night {
   background: linear-gradient(to right, rgb(45, 98, 247), rgb(95, 109, 236), rgb(175, 127, 219));
 }
+
 .weather-night .night-image,
 .weather-night .rain-cloud-drops {
   display: block;
 }
+
 .weather-night .night-inner .cloud-image {
   height: 200px;
   width: 200px;
 }
+
 .weather-night .night-inner .moon {
   position: absolute;
   height: 100px;
@@ -260,33 +301,40 @@ body {
   right: -10px;
   transform: rotate(-30deg);
 }
-.weather-night .rain-cloud-drops > div > span {
+
+.weather-night .rain-cloud-drops>div>span {
   height: 8px !important;
   width: 8px;
   border-radius: 50%;
 }
-.weather-night .rain-cloud-drops > div > span:nth-child(-n+10),
-.weather-night .rain-cloud-drops > div > span:nth-child(16),
-.weather-night .rain-cloud-drops > div > span:nth-child(17) {
+
+.weather-night .rain-cloud-drops>div>span:nth-child(-n+10),
+.weather-night .rain-cloud-drops>div>span:nth-child(16),
+.weather-night .rain-cloud-drops>div>span:nth-child(17) {
   visibility: hidden;
 }
-.weather-night .rain-cloud-drops > div > span:nth-child(11) {
+
+.weather-night .rain-cloud-drops>div>span:nth-child(11) {
   bottom: 165px;
 }
-.weather-night .rain-cloud-drops > div > span:nth-child(12) {
+
+.weather-night .rain-cloud-drops>div>span:nth-child(12) {
   bottom: 0px;
 }
-.weather-night .rain-cloud-drops > div > span:nth-child(13),
-.weather-night .rain-cloud-drops > div > span:nth-child(14),
-.weather-night .rain-cloud-drops > div > span:nth-child(15) {
+
+.weather-night .rain-cloud-drops>div>span:nth-child(13),
+.weather-night .rain-cloud-drops>div>span:nth-child(14),
+.weather-night .rain-cloud-drops>div>span:nth-child(15) {
   left: -10px;
 }
-.weather-night .rain-cloud-drops > div > span:nth-child(18) {
+
+.weather-night .rain-cloud-drops>div>span:nth-child(18) {
   height: 15px !important;
   width: 15px;
 }
-.weather-night .rain-cloud-drops > div > span:nth-child(13),
-.weather-night .rain-cloud-drops > div > span:nth-child(15) {
+
+.weather-night .rain-cloud-drops>div>span:nth-child(13),
+.weather-night .rain-cloud-drops>div>span:nth-child(15) {
   height: 11px !important;
   width: 11px;
 }
@@ -294,17 +342,21 @@ body {
 .weather-rainy {
   background: linear-gradient(to right, rgb(0, 191, 166), rgb(47, 211, 164), rgb(97, 236, 163));
 }
+
 .weather-rainy .rainy-image,
 .weather-rainy .rain-cloud-drops {
   display: block;
 }
+
 .weather-rainy .rainy-image {
   top: -65px;
 }
+
 .weather-rainy .rainy-inner .cloud-image {
   height: 200px;
   width: 200px;
 }
+
 .weather-rainy .rainy-inner .thunder {
   position: absolute;
   height: 80px;
@@ -318,8 +370,11 @@ body {
   justify-content: center;
   margin-top: 3rem;
 }
+
 .not-found p {
   font-style: italic;
   font-size: 1.2rem;
   color: white;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

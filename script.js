@@ -15,7 +15,7 @@ const sunny = new Set(['Sunny', 'Clear']);
 const night = new Set(['Mist']);
 
 searchButton.addEventListener('click', () => {
-    let place = input.value;
+    const place = input.value;
     input.value = "";
     const fetchData = async function(){
         try {
